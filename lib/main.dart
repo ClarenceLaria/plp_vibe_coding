@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_front_app/screens/home_screen.dart';
+import 'package:store_front_app/screens/entry_point.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      home: const EntryPoint(),
     );
   }
 }
